@@ -1,0 +1,3 @@
+import { Headphones,ShoppingCart,MessageCircle,Laptop } from 'lucide-react'; import { ContactButton,FadeIn,SectionTitle } from './Shared'; import { aboutText } from '../constants';
+const icons=[Headphones,ShoppingCart,MessageCircle,Laptop];
+export function About(){return <section id="about" className="about"><div className="float-icons">{icons.map((Icon,i)=><FadeIn delay={i*.1} key={i}><div className={'float-icon i'+i}><Icon/></div></FadeIn>)}</div><div className="about-content"><FadeIn><SectionTitle>About me</SectionTitle></FadeIn><FadeIn delay={.15}><p>{aboutText}</p></FadeIn><FadeIn delay={.25}><ContactButton/></FadeIn></div></section>}

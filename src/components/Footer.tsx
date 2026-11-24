@@ -1,0 +1,1 @@
+import {navLinks} from '../constants';export function Footer(){return <footer><p>© 2026 Muhammad Sami</p><div>{navLinks.slice(0,5).map(x=><a href={'#'+x.toLowerCase()} key={x}>{x}</a>)}</div><a href="#home">Back to top ↑</a></footer>}

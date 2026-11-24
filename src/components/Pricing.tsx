@@ -1,0 +1,2 @@
+import { pricing } from '../constants';import {ContactButton,FadeIn,SectionTitle} from './Shared';
+export function Pricing(){return <section id="pricing" className="pricing"><SectionTitle>Pricing</SectionTitle><div className="pricing-grid">{pricing.map((p,i)=><FadeIn delay={i*.1} className="glass price" key={p.name}><h3>{p.name}</h3><strong>Contact for quote</strong><ul>{p.features.map(x=><li key={x}>{x}</li>)}</ul><ContactButton/></FadeIn>)}</div></section>}

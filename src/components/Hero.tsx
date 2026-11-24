@@ -1,0 +1,3 @@
+import { FadeIn, Magnet, ContactButton } from './Shared';
+import { heroIntro } from '../constants';
+export function Hero(){return <section id="home" className="hero"><FadeIn className="hero-copy"><p className="eyebrow">Virtual Assistant · IT Student</p><h1 className="hero-heading">Hi, i&apos;m sami</h1></FadeIn><FadeIn delay={.2} className="portrait"><Magnet><div className="portrait-glow"><img src="/images/sami.png" alt="Muhammad Sami" /></div></Magnet></FadeIn><div className="hero-bottom"><FadeIn delay={.35}><p>{heroIntro}</p></FadeIn><FadeIn delay={.5}><ContactButton/></FadeIn></div></section>}

@@ -1,0 +1,2 @@
+import { services } from '../constants'; import { FadeIn } from './Shared';
+export function Services(){return <section id="services" className="light-section services"><h2>Services</h2><div className="service-list">{services.map(([name,desc],i)=><FadeIn delay={i*.06} className="service" key={name}><span>{String(i+1).padStart(2,'0')}</span><div><h3>{name}</h3><p>{desc}</p></div></FadeIn>)}</div></section>}
